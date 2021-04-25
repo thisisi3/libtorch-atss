@@ -22,13 +22,13 @@ cmake --build . --config Release --parallel 8
 #### train
 
 ```shell
-./build/train configs/atss_r50_fpn_1x_voc.json --work-dir work_dir --gpu 0
+./build/train configs/atss_r50_fpn_voc0712.json --work-dir work_dir --gpu 0
 ```
 
 #### inference
 
 ```shell
-./build/test atss_r50_fpn_1x_voc.json epoch_12.pt --out epoch_12.bbox.json --gpu 0
+./build/test atss_r50_fpn_voc0712.json epoch_12.pt --out epoch_12.bbox.json --gpu 0
 ```
 
 **For more guidance please look at [readme](https://github.com/thisisi3/libtorch-faster-rcnn#readme).**
